@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Disallow: /tate-and-co.html

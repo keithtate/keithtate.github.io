@@ -1,0 +1,156 @@
+html {
+  font-size: 10px;
+  /* controls 'rem' unit's size. */
+  background-color: lightcyan;
+}
+
+body {
+  font-size: 16px;
+  color: lightcyan;
+}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+p a {
+  padding: 0.1rem 0.4rem;
+  margin: 0 -0.4rem;
+}
+
+p a:hover {
+  background-color: white;
+  color: skyblue;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: skyblue;
+  box-shadow: 0 0 5rem #ffffff;
+}
+
+#header {
+  text-align: center;
+  margin: -3rem 0 0;
+  padding: 0 0 2rem;
+}
+
+#header h1 {
+  font-size: 20rem;
+  color: lightcyan;
+  text-shadow: 0.25rem 0.25rem 1rem #ffffff;
+  font-weight: bold;
+  margin: unset;
+  padding: unset;
+}
+
+#header h2 {
+  margin: -4rem 0 0;
+  letter-spacing: 0.58ch;
+}
+
+nav ul ul {
+  float: right;
+}
+
+nav ul {
+  overflow: hidden;
+  background-color: lightcyan;
+  color: skyblue;
+}
+
+nav ul a {
+  color: skyblue;
+  padding: unset;
+  margin: unset;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav li a:hover {
+  background-color: white;
+}
+
+.content {
+  margin: 4rem 0 0;
+}
+
+.content p {
+  margin-top: 2rem;
+}
+
+article {
+  margin-top: 5rem;
+}
+
+article>header {
+  text-align: center;
+}
+
+article footer {
+  padding: 3rem 0 6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.media-wrapper {
+  margin: 0 auto;
+  width: 45rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.media img {
+  border: 1rem lightcyan solid;
+  box-shadow: 0 0 5rem #ffffff;
+}
+
+.media-caption {
+  padding: 1rem;
+}
+
+#footer {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 0 2rem;
+}
+
+/* `@media` rules should be evaluated last else `!important` may be necessary. */
+/* `@media`'s `max-width` should be the pages max width + the margin from left/right found below. */
+@media only screen and (max-width: 840px) {
+  main {
+    max-width: 100%;
+    margin: 0 2rem;
+  }
+
+  #header h1 {
+    font-size: 25vw;
+  }
+
+  nav li,
+  nav ul ul {
+    float: unset;
+    display: block;
+  }
+}
