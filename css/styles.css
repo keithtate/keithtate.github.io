@@ -13,9 +13,22 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: italic;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
 a {
   color: white;
   font-weight: bold;
+}
+
+a:hover {
+  background-color: white;
+  color: skyblue;
 }
 
 p a {
@@ -23,14 +36,29 @@ p a {
   margin: 0 -0.4rem;
 }
 
-p a:hover {
-  background-color: white;
-  color: skyblue;
+p.blockquote {
+  border-left: 1rem solid #ffffff18;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+  padding-left: 2rem;
+}
+
+p.blockquote:hover {
+  border-left: 1rem solid #ffffff22;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: bold;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+
+li:hover {
+  list-style-type: disc;
 }
 
 main {
@@ -70,6 +98,7 @@ nav ul {
   overflow: hidden;
   background-color: lightcyan;
   color: skyblue;
+  padding-left: unset;
 }
 
 nav ul a {
@@ -80,6 +109,12 @@ nav ul a {
 
 nav li {
   float: left;
+  list-style-type: none;
+  padding-left: unset;
+}
+
+nav li:hover {
+  list-style-type: none;
 }
 
 nav li a {
@@ -92,12 +127,21 @@ nav li a:hover {
   background-color: white;
 }
 
-.content {
+.article-content {
   margin: 4rem 0 0;
 }
 
-.content p {
+.article-content p {
   margin-top: 2rem;
+}
+
+.article-toc {
+  padding: 1rem 0;
+  background-color: #ffffff18;
+}
+
+.article-toc:hover {
+  background-color: #ffffff22;
 }
 
 article {
