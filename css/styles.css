@@ -31,6 +31,10 @@ a:hover {
   color: skyblue;
 }
 
+.media a:hover:has(img) {
+  background-color: unset;
+}
+
 p a {
   padding: 0.1rem 0.4rem;
   margin: 0 -0.4rem;
@@ -40,6 +44,7 @@ p.blockquote {
   border-left: 1rem solid #ffffff18;
   font-family: Consolas, 'Courier New', Courier, monospace;
   padding-left: 2rem;
+  text-align: justify;
 }
 
 p.blockquote:hover {
